@@ -1,0 +1,11 @@
+const int ledPin = 5; // GPIO 5번에 연결
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, HIGH); // LED에 전압 공급 → 밝게 켜짐
+}
+
+void loop() {
+  // 아무 동작 없음
+}
+
