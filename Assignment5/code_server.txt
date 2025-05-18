@@ -1,0 +1,21 @@
+#include <BLEDevice.h>
+#include <BLEServer.h>
+#include <BLEUtils.h>
+#include <BLE2902.h>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <DHT.h>
+#define temperatureCelsius
+
+#define bleServerName "DHT11_ESP32"
+#define DHTPIN 21
+#define DHTTYPE DHT11
+
+DHT dht(DHTPIN, DHTTYPE);
+
+float temp;
+float tempF;
+float hum;
+
+unsigned long lastTime = 0;
+unsigned long timerDelay = 30000
